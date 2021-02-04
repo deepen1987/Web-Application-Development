@@ -1,0 +1,123 @@
+<!-- CS601 - A1 
+    Deependrasingh Shekhawat 
+    Displaying a Table-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Bruins Roster
+    </title>
+</head>
+<style>
+    table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 40%;
+    }
+
+    .head {
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+    }
+
+    td {
+        border: 1px solid black;
+        background-color: lightgray;
+    }
+
+    .name {
+        background-color: darkgray;
+    }
+</style>
+
+<body>
+    <h3>Forwards</h3>
+    <table>
+        <thead>
+            <tr>
+                <td class="head">Player</td>
+                <td class="head">#</td>
+                <td class="head">Pos</td>
+                <td class="head">Sh</td>
+                <td rowspan="2" class="head">Ht</td>
+                <td class="head"></td>
+                <td class="head">Birthplace</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">Patrice Bergeron (C)</td>
+                <td>37</td>
+                <td>C</td>
+                <td>R</td>
+                <td>6'</td>
+                <td>1"</td>
+                <td>Ancienne-Lorette, QC, CAN</td>
+            </tr>
+            <tr>
+                <td class="name">Anders Bjork</td>
+                <td>10</td>
+                <td>LW</td>
+                <td>L</td>
+                <td>6'</td>
+                <td>0"</td>
+                <td>Mequon, WI, USA</td>
+            </tr>
+            <tr>
+                <td class="name">Anton Blidh</td>
+                <td>81</td>
+                <td>LW</td>
+                <td>L</td>
+                <td>6'</td>
+                <td>0"</td>
+                <td>Molnlycke, SWE</td>
+            </tr>
+            <tr>
+                <td class="name">Charlie Coyle</td>
+                <td>13</td>
+                <td>C</td>
+                <td>R</td>
+                <td>6'</td>
+                <td>3"</td>
+                <td>E. Weymouth, MA, USA</td>
+            </tr>
+            <tr>
+                <td class="name">Jake DeBrusk*</td>
+                <td>74</td>
+                <td>LW</td>
+                <td>L</td>
+                <td>6'</td>
+                <td>0"</td>
+                <td>Edmonton, AB, CAN</td>
+            </tr>
+            <tr>
+                <td class="name">Trent Frederic</td>
+                <td>11</td>
+                <td>C</td>
+                <td>L</td>
+                <td>6'</td>
+                <td>2"</td>
+                <td> St. Louis, MO, USA</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
