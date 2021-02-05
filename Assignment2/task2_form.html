@@ -1,0 +1,158 @@
+<!-- CS601 - A1 
+    Deependrasingh Shekhawat 
+    Displaying a Form-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>
+        Account setup form
+    </title>
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+            font-weight: bold;
+            padding-right: 5px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        form li+li {
+            margin-top: 1em;
+        }
+
+        .row1 {
+            display: flex;
+        }
+
+        .column1 {
+            flex: 5%;
+            padding-top: 1%;
+        }
+
+        .column2 {
+            flex: 95%;
+        }
+
+        .row2 {
+            padding-left: 2%;
+        }
+
+        #name,
+        #email,
+        #username,
+        #password,
+        #company {
+            border-top-color: gray;
+            border-right-color: gray;
+            border-left-color: lightgray;
+            border-bottom-color: lightgray;
+        }
+
+        #country {
+            /* Used for Chrome and other browsers*/
+            appearance: none;
+            /* Used for IE and other browsers*/
+            -webkit-appearance: none;
+            /* Used for Moz browsers*/
+            -moz-appearance: none;
+            width: 250px;
+            border: 1px solid #999;
+            font-weight: bold;
+            background-color: #eee;
+            border-radius: 4px;
+            box-shadow: 1px 1px gray;
+            /*Used to set arrow image for dropdown*/
+            background: url("images/arrow.png") 99.8% / 10% no-repeat;
+            padding: 1px 0px 2px 10px;
+        }
+
+        #timezone {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 300px;
+            border: 1px solid #999;
+            font-weight: bold;
+            background-color: #eee;
+            border-radius: 4px;
+            box-shadow: 1px 1px gray;
+            background: url("images/arrow.png") 99.8% / 7% no-repeat;
+            padding: 0px 0px 2px 10px;
+        }
+
+        p {
+            color: gray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="row1">
+        <div class="column1">
+            <img src="images/Circle2.png" alt="form logo">
+        </div>
+        <div class="column2">
+            <h1>Setup your account</h1>
+            <p>Make sure to use a valid email address. you'll need to verify it before you can send any campaigns.</p>
+        </div>
+    </div>
+    <div class="row2">
+        <form action="/my-handling-form-page" method="GET">
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                </li>
+                <li>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email">
+                </li>
+                <li>
+                    <label for="username">Username</label>
+                    <input type="text" id="username">
+                </li>
+                <li>
+                    <label for="password">Password</label>
+                    <input type="password" id="password">
+                </li>
+                <li>
+                    <label for="company">Company</label>
+                    <input type="text" id="company">
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="usa">United States of America</option>
+                        <option value="canada">Canada</option>
+                        <option value="mexico">Mexico</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="timezone">Timezone</label>
+                    <select name="timezone" id="timezone">
+                        <option value="gmt06">(GMT-06:00) Central America)</option>
+                    </select>
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+
+</html>
