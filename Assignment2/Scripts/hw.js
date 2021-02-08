@@ -56,15 +56,6 @@ function ageVerify() {
   var birth_month = Number(x[1]);
   var birth_day = Number(x[2]);
 
-  if (
-    (birth_year == today_yyyy && birth_month > today_mm) ||
-    birth_date > today_dd
-  ) {
-    alert("Birth date cannot be greater than today's date.");
-  } else if (birth_year > today_yyyy) {
-    alert("Birth date cannot be greater than today's date.");
-  }
-
   var age = today_yyyy - birth_year;
   var months = today_mm - birth_month;
 
@@ -80,9 +71,9 @@ function ageVerify() {
     alert("Your 21st birthday is only few months away");
   } else if (age == 20) {
     alert("Your 21st birthday is coming up next year");
-  } else if (age > 21) {
+  } else if (age >= 21) {
     alert("You are over 21.");
   } else {
-    alert("You are not 21 yet...");
+    alert("You are not 21 yet");
   }
 }
