@@ -2,21 +2,19 @@ const inputField = document.getElementById("input_box");
 inputField.addEventListener("blur", verifyInput);
 
 function numberFactorial(fact) {
-  let num = 1;
-  while (fact > 0) {
-    num = num * fact;
-    fact--;
+  if (fact == 0) {
+    return 1;
   }
-  return num;
+  return fact * numberFactorial(fact - 1); //Use of recursive function
 }
 
 function verifyInput(event) {
+  let inputText = document.getElementById("input_box").value;
+  event.target.style.borderColor = "";
   try {
-    let inputText = document.getElementById("input_box").value;
-    if(inputText.length < 1) throw "Undefined Value"
+    if (inputText.length < 1) throw "Undefined Value";
     if (isNaN(inputText)) throw "Please enter a number";
     if (inputText < 0) throw "Please enter a positive number";
-    event.target.style.borderColor = "";
     document.getElementById("result").placeholder = numberFactorial(inputText);
   } catch (err) {
     event.target.style.borderColor = "red";

@@ -1,0 +1,37 @@
+<!-- CS601 - A1 
+    Deependrasingh Shekhawat 
+    JavaScript Lab Calculator -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="Images/d.ico" />
+    <style>
+      fieldset {
+        width: fit-content;
+      }
+      button {
+        font-weight: bold;
+        width: 18%;
+      }
+    </style>
+    <script src="Scripts/lab-cal.js"></script>
+  </head>
+  <body>
+    <h3>Please add numbers and select operations below</h3>
+
+    <fieldset>
+      <input type="number" id="inputbox1" /><br />
+      <input type="number" id="inputbox2" /><br /><br />
+      <button id="add">+</button>
+      <button id="sub">-</button>
+      <button id="mul">x</button>
+      <button id="div">/</button>
+    </fieldset>
+    <p id="result"></p>
+  </body>
+</html>
