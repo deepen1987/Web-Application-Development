@@ -1,0 +1,58 @@
+main,
+div,
+p,
+span {
+  border-color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #f9f9f9;
+  background-image: url();
+  background-position: center top;
+  background-repeat: repeat;
+  /* text-shadow: #ffffff 0px 1px 0px; */
+  /* font-family: "Georgia", "Times", serif; */
+  /* -webkit-font-smoothing: antialiased; */
+}
+
+main {
+  background-color: coral;
+  display: flex;
+  block-size: 800px;
+  border-style: dotted;
+}
+div {
+  background-color: cyan;
+  display: block;
+  block-size: 350px;
+  margin-top: 30px;
+  border-style: dotted;
+}
+p {
+  background-color: deeppink;
+  block-size: 50px;
+  margin-top: 30px;
+  border-style: dotted;
+}
+span {
+  background-color: chartreuse;
+  display: block;
+  border-style: dotted;
+  size: 40px;
+  margin-left: 50px;
+  height: 40px;
+  width: 40px;
+}
+.gold {
+  color: gold;
+}
+#cube {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  opacity: 0.4;
+  position: absolute;
+  display: block;
+}
