@@ -1,0 +1,12 @@
+body {
+  display: block;
+  position: absolute;
+}
+
+#first {
+  font-family: "Akaya Telivigala", cursive;
+}
+
+#second {
+  font-family: "Stick", sans-serif;
+}

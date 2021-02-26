@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  border: 3px solid lightgray;
+}
+
+.circles {
+  border-radius: 100%;
+  margin: 5px;
+}
+
+.cir-one {
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  background-color: rgba(242, 239, 44);
+}
+
+.cir-two {
+  width: 65px;
+  height: 65px;
+  border: 1px solid;
+  background-color: orange;
+}
+
+.cir-three {
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  background-color: red;
+}
+
+.cir-four {
+  width: 75px;
+  height: 75px;
+  border: 1px solid;
+  background-color: pink;
+}
+
+.cir-five {
+  width: 80px;
+  height: 80px;
+  border: 1px solid;
+  background-color: magenta;
+}

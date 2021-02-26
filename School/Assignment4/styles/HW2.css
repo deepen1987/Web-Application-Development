@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  margin: 0%;
+}
+
+div {
+  width: 20%;
+  height: 100vh;
+}
+
+#bar1 {
+  background-color: yellow;
+}
+
+#bar2 {
+  background-color: orange;
+}
+
+#bar3 {
+  background-color: red;
+}
+
+#bar4 {
+  background-color: magenta;
+}
+
+#bar5 {
+  background-color: pink;
+}
