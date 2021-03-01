@@ -1,3 +1,9 @@
+.container {
+  display: inline-flex;
+  width: 200px;
+  height: 200px;
+}
+
 #box1 {
   width: 100px;
   height: 100px;
@@ -8,7 +14,6 @@
   width: 100px;
   height: 100px;
   position: relative;
-  bottom: 100px;
-  left: 100px;
+  float: right;
   background-color: yellow;
 }

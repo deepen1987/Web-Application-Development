@@ -1,0 +1,10 @@
+body {
+  display: block;
+  margin: 20px;
+  color: rgb(0, 162, 255);
+  background-color: bisque;
+}
+
+p span.target {
+  color: darkred;
+}
