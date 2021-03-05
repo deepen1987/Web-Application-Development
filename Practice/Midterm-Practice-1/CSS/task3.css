@@ -1,0 +1,9 @@
+div {
+  width: 300px;
+  border: 1px solid lightgray;
+  height: 100px;
+}
+
+#messages {
+  text-align: center;
+}

@@ -1,0 +1,48 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #222;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 5.653rem;
+}
+
+h2 {
+  font-size: 3.998rem;
+}
+
+h3 {
+  font-size: 2.827rem;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  /* padding-inline-start: 2rem; */
+}
+
+.lead {
+  font-family: "EB Garamond", serif;
+  font-size: 2.5rem;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}

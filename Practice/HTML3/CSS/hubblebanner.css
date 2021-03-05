@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 5rem;
+  word-spacing: 1.5rem;
+  text-shadow: 2px 2px 0 #000;
+}
+.container {
+  background-image: url(../Images/background_w320.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: white;
+  height: 100vh;
+  text-align: center;
+}
+
+.tagline {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  font-weight: 300;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url(../Images/background_w853.jpg);
+    background-size: cover;
+  }
+
+  .container .tagline {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    background-image: url(../Images/background_w1228.jpg);
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-image: url(../Images/background_w1440.jpg);
+    background-size: cover;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+}
