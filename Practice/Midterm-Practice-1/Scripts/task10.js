@@ -1,4 +1,12 @@
 $(document).ready(function () {
+  $("#depart").focus(function (e) {
+    $(this).attr("type", "date");
+  });
+
+  $("#return").focus(function (e) {
+    $(this).attr("type", "date");
+  });
+
   $("input[type = date]").change(function (e) {
     let departDate = $("#depart").val();
     let returnDate = $("#return").val();

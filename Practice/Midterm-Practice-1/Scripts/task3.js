@@ -3,11 +3,14 @@ $(document).ready(function () {
   let date = new Date();
 
   for (const iterator of a) {
-    $(iterator).mousedown(function () {
-      console.log(date.toLocaleString(), $(iterator).attr("id"));
-    });
-    $(iterator).mouseover(function () {
-      $("#messages").text($(iterator).attr("title"));
-    });
+    $(iterator)
+      .on("click", function () {
+        $("#messages").text(
+          date.toLocaleString() + " " + $(iterator).attr("title")
+        );
+      })
+      .mouseover(function () {
+        $("#messages").text($(iterator).attr("aria-placeholder"));
+      });
   }
 });

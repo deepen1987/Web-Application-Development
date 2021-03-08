@@ -1,0 +1,25 @@
+div {
+  width: 200px;
+  height: 200px;
+  font-size: xx-large;
+}
+
+.box1 {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: tomato;
+}
+
+.box3 {
+  background-color: dodgerblue;
+}
+
+::selection {
+  color: crimson;
+}
+
+div + div:hover {
+  background-color: yellow;
+}

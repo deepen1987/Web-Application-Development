@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="../Midterm-Practice-1/CSS/form.css" />
+    <script src="../Midterm-Practice-1/Scripts/jquery.js"></script>
+    <script src="../Midterm-Practice-1/Scripts/form.js"></script>
+  </head>
+  <body>
+    <form class="form-send" action="" method="post" id="form-send">
+      <p class="header">Contact Form</p>
+      <input type="text" placeholder="Name" class="name" required />
+      <input type="email" placeholder="Email" class="email" required />
+      <input
+        type="text"
+        placeholder="Subject"
+        min="10"
+        maxlength="50"
+        class="subject"
+      />
+      <textarea
+        class="text-area"
+        rows="6"
+        cols="50"
+        placeholder="Message"
+      ></textarea>
+      <button type="button" class="btn" form="form-send">Send Message</button>
+    </form>
+  </body>
+</html>
