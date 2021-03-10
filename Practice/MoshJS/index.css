@@ -8,3 +8,9 @@ body {
   font-size: 10px;
   color: blue;
 }
+
+@media screen and (max-width: 500px) and (min-width: 200px) {
+  p {
+    font-size: 1in;
+  }
+}

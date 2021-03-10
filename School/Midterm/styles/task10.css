@@ -1,0 +1,11 @@
+div {
+  margin: 10px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid lightgray;
+  border-radius: 100%;
+  margin: 5px;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea id="text" cols="30" rows="10"></textarea>
+    <script>
+      document.getElementById("text").addEventListener("blur", (event) => {
+        let textArea = document.getElementById("text").value;
+
+        if (textArea) {
+          textArea = textArea.replace("delete", "etelde");
+          textArea = textArea.replace("truncate", "etacnurt");
+          textArea = textArea.replace("update", "etadpu");
+          textArea = textArea.replace("insert", "tresni");
+          textArea = textArea.replace("drop", "pord");
+          document.getElementById("text").value = textArea;
+        }
+      });
+    </script>
+  </body>
+</html>
