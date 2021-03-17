@@ -1,0 +1,72 @@
+body {
+  width: 100vw;
+}
+
+.nav-bar > a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar > a:link {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-hover {
+  background-color: #3b3b3b;
+  /* Add this using JS on nav elements */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.header:hover .nav-bar {
+  display: inherit;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 200px;
+}
+
+@media screen and (min-width: 421px) {
+  body {
+    display: flex;
+  }
+  .container {
+    width: 60%;
+  }
+
+  .side-container {
+    width: 20%;
+    height: 100vh;
+    background-color: beige;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+  }
+  #menu {
+    display: none;
+  }
+  .nav-bar {
+    display: inherit;
+    padding: 8px;
+    background-color: black;
+  }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculators</title>
+    <link rel="stylesheet" href="../Project/styles/normalize.css" />
+    <link rel="stylesheet" href="../Project/styles/styles.css" />
+    <link rel="stylesheet" href="../Project/styles/calculator.css" />
+
+    <script src="../Project/scripts/calculator.js"></script>
+  </head>
+  <body>
+    <div class="side-container"></div>
+    <div class="container">
+      <div class="header">
+        <div id="menu">Menu</div>
+        <div id="about" class="nav-bar">Home</div>
+        <!--Add change color on hover through JS-->
+        <div id="calc" class="nav-bar">
+          <a href="../Project/calculator.html">Calculators</a>
+        </div>
+        <div id="work" class="nav-bar">
+          <a href="../Project/workout.html">Workouts</a>
+        </div>
+      </div>
+      <div class="main">
+        <div class="bmi-container">
+          <div class="bmi-header"><h2>Body Mass Index BMI Calculator</h2></div>
+          <div class="bmi-body-us">
+            <form class="bmi" id="form-bmi" action="#">
+              <div>
+                <input type="radio" name="unit" id="us" checked />
+                <label class="radio" for="us">US</label>
+                <input type="radio" name="unit" id="metric" />
+                <label class="radio" for="metric">Metric</label>
+              </div>
+
+              <div>
+                <div>Height</div>
+                <div class="one">
+                  <input type="number" id="height-1" min="0" value="5" />
+                  <label for="height-1">feet</label>
+                  <input type="number" id="height-2" min="0" value="9" />
+                  <label for="height-2">inch</label>
+                </div>
+              </div>
+
+              <div>
+                <div>Weight</div>
+                <div class="one">
+                  <input type="number" id="lbs" min="0" value="172" />
+                  <label for="lbs">lbs</label>
+                </div>
+              </div>
+            </form>
+            <p class="bmi-cat">BMI Categories:</p>
+          </div>
+
+          <div class="result-bmi"></div>
+        </div>
+        <div class="body-fat-container">
+          <div class="bf-header"><h2>US Navy Body Fat Calculator</h2></div>
+          <div class="bf-body-us">
+            <form class="bf" id="form-bf" action="#">
+              <div>
+                <div>Gender</div>
+                <div>
+                  <input type="radio" name="gender" id="female" checked />
+                  <label class="radio" for="female">Female</label>
+                  <input type="radio" name="gender" id="male" />
+                  <label class="radio" for="male">Male</label>
+                </div>
+              </div>
+
+              <div class="bf-inputs">
+                <div class="two">Height</div>
+                <div>
+                  <input type="number" id="feet" min="0" value="5" />
+                  <label for="feet">feet</label>
+                  <input type="number" id="inch" min="0" value="9" />
+                  <label for="inch">inch</label>
+                </div>
+              </div>
+
+              <div class="bf-inputs">
+                <div class="two">Weight</div>
+                <div>
+                  <input type="number" id="bf-lbs" min="0" value="121" />
+                  <label for="bf-lbs">lbs</label>
+                </div>
+              </div>
+
+              <div class="bf-inputs">
+                <div class="two">Waist</div>
+                <div>
+                  <input type="number" id="waist" min="0" value="27" />
+                  <label for="waist">inch</label>
+                </div>
+              </div>
+
+              <div class="bf-inputs">
+                <div class="two">Hip</div>
+                <div>
+                  <input type="number" id="hip" min="0" value="36" />
+                  <label for="hip">inch</label>
+                </div>
+              </div>
+
+              <div class="bf-inputs">
+                <div class="two">Neck</div>
+                <div>
+                  <input type="number" id="neck" min="0" value="12" />
+                  <label for="neck">inch</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="result-bf"></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+    <div class="side-container"></div>
+  </body>
+</html>
