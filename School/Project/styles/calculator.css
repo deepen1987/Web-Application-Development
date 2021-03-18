@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  color: black;
+  color: #212432;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -45,6 +45,7 @@ h2 {
   width: 300px;
   height: 500px;
   border: 1px solid lightgrey;
+  border-radius: 7px;
 }
 
 .body-fat-container {
@@ -54,12 +55,16 @@ h2 {
   width: 300px;
   height: 500px;
   border: 1px solid lightgrey;
+  border-radius: 7px;
 }
 
 .bmi-header {
   height: 15%;
-  background-color: gray;
-  color: white;
+  text-transform: uppercase;
+  color: #ddd;
+  background: #212432;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .bmi-body-us {
@@ -76,13 +81,19 @@ h2 {
 }
 .result-bmi {
   height: 25%;
-  background-color: gray;
+  color: #ddd;
+  background: #212432;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 .bf-header {
   height: 15%;
-  background-color: gray;
-  color: white;
+  text-transform: uppercase;
+  color: #ddd;
+  background: #212432;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 .bf-body-us {
@@ -101,7 +112,10 @@ h2 {
 
 .result-bf {
   height: 25%;
-  background-color: gray;
+  color: #ddd;
+  background: #212432;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
 }
 
 #form-bmi div:first-of-type {
@@ -171,15 +185,15 @@ h2 {
     height: 700px;
   }
   .bmi-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    /* margin-right: auto; */
     width: 300px;
     height: 500px;
   }
 
   .body-fat-container {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    /* margin-right: auto; */
     width: 300px;
     height: 500px;
   }
@@ -188,7 +202,7 @@ h2 {
 @media screen and (min-width: 760px) {
   .side-container {
     width: 10%;
-    height: 100vh;
+    height: 900px;
     background-color: beige;
   }
 
@@ -198,12 +212,13 @@ h2 {
   .main {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 700px;
   }
   .bmi-container {
     margin: 0;
     margin-top: 30px;
+    margin-left: 20px;
     width: 300px;
     height: 500px;
   }
@@ -211,6 +226,7 @@ h2 {
   .body-fat-container {
     margin: 0;
     margin-top: 30px;
+    margin-left: 20px;
     width: 300px;
     height: 500px;
   }
