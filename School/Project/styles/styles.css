@@ -14,6 +14,12 @@ a:link {
   color: white;
 }
 
+.menu {
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
 .nav-bar-hover {
   background-color: #3b3b3b;
   /* Add this using JS on nav elements */
@@ -27,16 +33,19 @@ a:link {
   color: white;
 }
 
+.menu-content,
 .nav-bar {
-  display: none;
-  /* height: 0;
-  transition: height 0.5s ease-in-out; */
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  /* Add this using JS on nav elements */
 }
 
-.header:hover .nav-bar {
-  display: inherit;
-  /* height: 18px;
-  transition: height 0.5s ease-in-out; */
+.header:hover .menu-content,
+.nav-bar {
+  max-height: max-content;
+  transition: height 0.5s ease-in-out;
+  /* Add this using JS on nav elements */
 }
 
 .footer {
@@ -69,11 +78,15 @@ a:link {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
   }
-  #menu {
+  .menu {
     display: none;
   }
+  .menu-content {
+    display: flex;
+  }
+  .menu-content,
   .nav-bar {
-    display: inherit;
+    max-height: max-content;
     padding: 8px;
     background-color: black;
   }
