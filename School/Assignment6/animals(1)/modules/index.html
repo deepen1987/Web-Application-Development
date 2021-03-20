@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Setting the viewport meta tag lets you control the width 
+         and scaling of the viewport so that it's sized correctly 
+         on all devices. -->
+
+    <!-- https://web.dev/viewport/  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles/animal.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+
+    <!-- Reference for this information:  https://bit.ly/3i0Sy4C  -->
+
+    <!-- "integrity" attribute is to allow the browser to check the file source to ensure that the code is never loaded if the source has been manipulated. -->
+    <!-- Crossorigin attribute is present when a request is loaded using 'CORS' which is now a requirement of SRI checking when not loaded from the 'same-origin'. -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" 
+          integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" 
+          crossorigin="anonymous">
+    <title>Modules</title>
+
+    <script type="module">
+        import { makeSound } from "./modules/animals.js";
+        window.addEventListener("DOMContentLoaded", event => {
+            document.querySelector("[class$=success]").addEventListener("click", event => {
+                document.querySelector("p").innerText = makeSound();
+           });
+           document.querySelector("[class$=warning]").addEventListener("click", event => {
+               document.querySelector("p").innerText = makeSound("cat");
+           });
+           document.querySelector("[class$=error]").addEventListener("click", event => {
+               document.querySelector("p").innerText = makeSound("horse");
+           });
+        });
+    </script>
+  </head>
+  <body>
+      <header>
+        <h1>Click a button to see the noise.</h1>
+      </header>
+      <!-- read about the main element:  https://bit.ly/2Z3b6JW   -->
+      <main>
+        <div title="Click a button">
+            <button type="button" class="pure-button button-success">Dog</button>
+            <button type="button" class="pure-button button-warning">Cat</button>
+            <button type="button" class="pure-button button-error">Horse</button>
+        </div>
+        <p></p>
+      </main>
+      <footer>
+          <a href="https://www.gnu.org/licenses/quick-guide-gplv3">
+            <img width="36" height="36" 
+                 src="images/development+logo+opensource+icon-1320184808014475853_512.png"/>
+          </a>   
+      </footer>
+  </body>
+</html>

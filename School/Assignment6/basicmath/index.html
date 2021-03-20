@@ -1,0 +1,74 @@
+<!-- CS601 - A1 
+    Deependrasingh Shekhawat 
+    HW-1 using modules -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles/basicmath.css" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Basic Math</title>
+    <script type="module" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Please choose</h1>
+      <div>
+        <img id="addBtn" class="action" src="./images/addition_512.png" />
+        <img id="subBtn" class="action" src="./images/subtractiob.jpg" />
+        <img id="divBtn" class="action" src="./images/division_512.png" />
+        <img id="mulBtn" class="action" src="./images/multiply.png" />
+        <img id="modBtn" class="action" src="./images/modulus-512.png" />
+      </div>
+    </header>
+    <main>
+      <section class="tile" id="addition_section" style="display: none">
+        <h1 id="addTileNumber" class="lg"></h1>
+      </section>
+      <section
+        class="tile"
+        id="sub_section"
+        style="display: none"
+        title="Subtraction"
+      >
+        <h1 id="subTileNumber" class="lg"></h1>
+      </section>
+      <section
+        class="tile"
+        id="div_section"
+        style="display: none"
+        title="Division"
+      >
+        <h1 id="divTileNumber" class="lg"></h1>
+      </section>
+      <section
+        class="tile"
+        id="mul_section"
+        style="display: none"
+        title="Multiplication"
+      >
+        <h1 id="mulTileNumber" class="lg"></h1>
+      </section>
+      <section
+        class="tile"
+        id="mod_section"
+        style="display: none"
+        title="Modulus"
+      >
+        <h1 id="modTileNumber" class="lg"></h1>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>

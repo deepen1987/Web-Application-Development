@@ -1,0 +1,38 @@
+/* The following rules were copied 
+ * from https://purecss.io/buttons/
+ */
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+    background-color: rgb(28, 184, 65) !important;
+}
+.button-error {
+    background: rgb(202, 60, 60) !important;
+}
+.button-warning {
+    background: rgb(223, 117, 20) !important;
+}
+.button-secondary {
+    background: rgb(66, 184, 221) !important;
+}
+main, footer {
+    margin: auto;
+    text-align: center;
+    width: 75%;
+}
+div[title="Click a button"] {
+    display: flex;
+    justify-content: space-evenly;
+}
+footer {
+    position:fixed;
+    bottom:0px;
+    width:100%;
+}
+    
