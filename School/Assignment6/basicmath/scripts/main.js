@@ -115,7 +115,7 @@ divBtn.addEventListener("click", (event) => {
  <!-- See http://www.menucool.com/tooltip/css-tooltip -->
 <div
   id="div_tile"
-  answer=${first_num / second_num}
+  answer=${(first_num / second_num).toFixed(2)}
   style="border-bottom: 0"
   class="btn btn-primary tooltip"
 >

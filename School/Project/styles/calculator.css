@@ -3,29 +3,22 @@ body {
   color: #212432;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 input {
   width: 30px;
   text-align: center;
-  border: 1px solid #d1d1d1;
   border-radius: 4px;
 }
 
 h2 {
   margin-top: 0;
+  padding-left: 12px;
+  padding-top: 8px;
 }
 
+.city-temp {
+  padding-top: 8px;
+  background-color: rgba(226, 213, 245, 1);
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -78,6 +71,24 @@ h2 {
 .bmi-cat {
   margin-top: 24px;
   margin-left: 8px;
+  margin-bottom: 4px;
+}
+
+.bmi-table {
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.bmi-table > thead,
+th,
+td {
+  text-align: left;
+  border: 1px solid #212432;
+}
+
+.bmi-highlight {
+  background-color: #e8d2fa;
 }
 .result-bmi {
   height: 25%;
@@ -85,6 +96,11 @@ h2 {
   background: #212432;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  text-align: center;
+}
+.result-bmi > p {
+  margin-top: 0;
+  padding-top: 40px;
 }
 
 .bf-header {
@@ -102,6 +118,26 @@ h2 {
   border-bottom: 1px solid lightgrey;
 }
 
+.bf-details {
+  background-color: beige;
+  position: absolute;
+  font-size: 14px;
+}
+
+.bf-table {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+.bf-table > thead,
+th,
+td {
+  text-align: left;
+  border: 1px solid #212432;
+  padding: 3px;
+}
 .bf-inputs {
   display: flex;
 }
@@ -116,6 +152,19 @@ h2 {
   background: #212432;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  text-align: center;
+}
+
+.result-bf > div {
+  padding-top: 40px;
+}
+.result-bf div > p {
+  margin: 0;
+  padding-bottom: 3px;
+}
+
+.hide {
+  display: none;
 }
 
 #form-bmi div:first-of-type {
@@ -146,7 +195,7 @@ h2 {
   .side-container {
     width: 10%;
     height: 100vh;
-    background-color: beige;
+    background-color: whitesmoke;
   }
 
   .container {
@@ -172,7 +221,7 @@ h2 {
   .side-container {
     width: 5%;
     height: 100vh;
-    background-color: beige;
+    background-color: whitesmoke;
   }
 
   .container {
@@ -203,7 +252,7 @@ h2 {
   .side-container {
     width: 10%;
     height: 900px;
-    background-color: beige;
+    background-color: whitesmoke;
   }
 
   .container {
