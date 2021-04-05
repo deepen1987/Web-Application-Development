@@ -19,10 +19,18 @@ h2 {
   padding-top: 8px;
   background-color: rgba(226, 213, 245, 1);
 }
+
+.text-content {
+  color: #212432;
+  padding: 0 10px;
+  text-align: left;
+  justify-content: left;
+}
+
 .main {
   display: flex;
   flex-direction: column;
-  height: 1100px;
+  /* height: 1100px; */
 }
 .container {
   background-color: #ffffff;
@@ -231,7 +239,7 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 700px;
+    /* height: 700px; */
   }
   .bmi-container {
     margin-left: 20px;
@@ -261,8 +269,8 @@ td {
   .main {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly; */
-    height: 700px;
+    /* justify-content: space-evenly;
+    height: 700px; */
   }
   .bmi-container {
     margin: 0;

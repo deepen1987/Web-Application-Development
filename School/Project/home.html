@@ -12,13 +12,15 @@
       name="keywords"
       content="measuring body fat, bmi, body, workout, hiit, fat, calculator, navy calculator, navy body fat, navy fitness, navy body fat chart, navy body fat test, fitness, workout videos, workout routines"
     />
-    <!-- <meta name="application-name" content="Fitness Blender"> -->
-    <title>Calculators</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css?version=1" />
-    <link rel="stylesheet" href="styles/calculator.css?version=1" />
-
-    <script type="module" src="scripts/calculators.js"></script>
+    <link rel="stylesheet" href="styles/index.css?version=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="side-container"></div>
@@ -28,175 +30,21 @@
           <img width="30" height="30" src="images/menu.svg" alt="menu" />
         </div>
         <div class="menu-content">
-          <div id="about" class="nav-bar"><a href="index.html">Home</a></div>
-          <!--Add change color on hover through JS-->
+          <div id="about" class="nav-bar"><a href="home.html">Home</a></div>
+
           <div id="work" class="nav-bar">
             <a href="workout.html">Workouts</a>
           </div>
           <div id="calc" class="nav-bar">
-            <a href="calculator.html">Calculators</a>
+            <a href="index.html">Calculators</a>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="city-temp"></div>
       </div>
       <div class="main">
-        <div class="bmi-container">
-          <div class="bmi-header"><h2>Body Mass Index BMI Calculator</h2></div>
-          <div class="bmi-body-us">
-            <form class="bmi" id="form-bmi" action="#">
-              <div>
-                <input type="radio" name="unit" id="us" checked />
-                <label class="radio" for="us">US</label>
-                <input type="radio" name="unit" id="metric" />
-                <label class="radio" for="metric">Metric</label>
-              </div>
-
-              <div>
-                <div>Height</div>
-                <div class="one">
-                  <input type="text" id="height-1" value="5" />
-                  <label for="height-1">feet</label>
-                  <input type="text" id="height-2" value="9" />
-                  <label for="height-2">inch</label>
-                </div>
-              </div>
-
-              <div>
-                <div>Weight</div>
-                <div class="one">
-                  <input type="text" id="weight" value="172" />
-                  <label for="weight">lbs</label>
-                </div>
-              </div>
-            </form>
-            <p class="bmi-cat">BMI Categories:</p>
-            <table class="bmi-table">
-              <thead>
-                <tr>
-                  <th>BMI</th>
-                  <th>Weight Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr id="underweight">
-                  <td>Below 18.5</td>
-                  <td>Underweight</td>
-                </tr>
-                <tr id="normal">
-                  <td>18.5—24.9</td>
-                  <td>Normal</td>
-                </tr>
-                <tr id="overweight">
-                  <td>25.0—29.9</td>
-                  <td>Overweight</td>
-                </tr>
-                <tr id="obese">
-                  <td>30.0 and Above</td>
-                  <td>Obese</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="result-bmi"></div>
-        </div>
-        <div class="body-fat-container">
-          <div class="bf-header"><h2>US Navy Body Fat Calculator</h2></div>
-          <div class="bf-body-us">
-            <form class="bf" id="form-bf" action="#">
-              <div>
-                <div>Gender</div>
-                <div>
-                  <input type="radio" name="gender" id="female" checked />
-                  <label class="radio" for="female">Female</label>
-                  <input type="radio" name="gender" id="male" />
-                  <label class="radio" for="male">Male</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Height</div>
-                <div>
-                  <input type="text" id="feet" value="5" />
-                  <label for="feet">feet</label>
-                  <input type="text" id="inch" value="9" />
-                  <label for="inch">inch</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Weight</div>
-                <div>
-                  <input type="text" id="bf-weight" value="121" />
-                  <label for="bf-weight">lbs</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Waist</div>
-                <div>
-                  <input type="text" id="waist" value="27" />
-                  <label for="waist">inch</label>
-                </div>
-              </div>
-              <div class="bf-details hide">
-                <table class="bf-table">
-                  <thead>
-                    <tr>
-                      <th>Category</th>
-                      <th>Women</th>
-                      <th>Men</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Essential Fat</td>
-                      <td>10% - 13%</td>
-                      <td>2% - 5%</td>
-                    </tr>
-                    <tr>
-                      <td>Athletic</td>
-                      <td>14% - 20%</td>
-                      <td>6% - 13%</td>
-                    </tr>
-                    <tr>
-                      <td>Fit</td>
-                      <td>21% - 24%</td>
-                      <td>14% - 17%</td>
-                    </tr>
-                    <tr>
-                      <td>Acceptable</td>
-                      <td>25% - 31%</td>
-                      <td>18% - 25%</td>
-                    </tr>
-                    <tr>
-                      <td>Obese</td>
-                      <td>32% +</td>
-                      <td>26% +</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="bf-inputs" id="hip-sec">
-                <div class="two">Hip</div>
-                <div>
-                  <input type="text" id="hip" value="36" />
-                  <label for="hip">inch</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Neck</div>
-                <div>
-                  <input type="text" id="neck" value="12" />
-                  <label for="neck">inch</label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="result-bf"></div>
+        <div class="message">
+          WHEN YOU FEEL LIKE QUITING, THINK ABOUT WHY YOU STARTED -<br />
+          EVERY STEP IS A PROGRESS.<br /><br />
+          NOW START YOURS...
         </div>
       </div>
       <div class="footer">

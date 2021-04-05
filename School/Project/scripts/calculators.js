@@ -21,32 +21,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function success(position) {
     const lat = position.coords.latitude;
     const long = position.coords.longitude;
-    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=6d23e08395bec16e7a58182bee901115`;
-    let cityTemp = document.querySelector(".city-temp");
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        let str = data.weather.icon;
-        cityTemp.innerHTML = `${data.name}: ${data.main.temp}<sup>0</sup>F / ${(
-          ((data.main.temp - 32) * 5) /
-          9
-        ).toFixed(0)}<sup>0</sup>C, ${
-          data.weather[0].description
-        }<img width="27" src="https://openweathermap.org/img/wn/${
-          data.weather[0].icon
-        }@2x.png" alt="weather">`;
-      })
-      .catch(handleErr);
+    weather(lat, long);
   }
-  function handleErr(err) {}
 
   function error() {
-    console.log("No position data");
+    userIP();
   }
 
   const options = {
     enableHighAccuracy: true,
-    timeout: 27000,
+    timeout: 180000,
   };
 
   if (!("geolocation", navigator)) {
@@ -55,3 +39,42 @@ document.addEventListener("DOMContentLoaded", (event) => {
     navigator.geolocation.watchPosition(success, error, options);
   }
 });
+
+function weather(lat, long) {
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=6d23e08395bec16e7a58182bee901115`;
+  let cityTemp = document.querySelector(".city-temp");
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      let str = data.weather.icon;
+      cityTemp.innerHTML = `${data.name}: ${data.main.temp}<sup>0</sup>F / ${(
+        ((data.main.temp - 32) * 5) /
+        9
+      ).toFixed(0)}<sup>0</sup>C, ${
+        data.weather[0].description
+      }<img width="27" src="https://openweathermap.org/img/wn/${
+        data.weather[0].icon
+      }@2x.png" alt="weather">`;
+    })
+    .catch((handleErr) => {
+      cityTemp.innerHTML = `Weather Data not available`;
+    });
+}
+
+function userIP() {
+  fetch(`https://api.ipify.org?format=json`)
+    .then((response) => response.json())
+    .then((data) => {
+      userIpGeo(data.ip);
+    });
+}
+
+function userIpGeo(ipp) {
+  fetch(`http://ipwhois.app/json/${ipp}`)
+    .then((response) => response.json())
+    .then((data) => {
+      let latIP = data.latitude;
+      let longIP = data.longitude;
+      weather(latIP, longIP);
+    });
+}

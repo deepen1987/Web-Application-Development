@@ -1,0 +1,100 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  height: 80px;
+}
+.body {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 10px;
+}
+.article {
+  background-color: whitesmoke;
+  margin-bottom: 3px;
+}
+.article:hover {
+  background-color: gray;
+  color: white;
+}
+.article div {
+  margin-bottom: 8px;
+}
+.headline {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #212432;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  color: inherit;
+}
+.story {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.publisher {
+  padding-right: 15px;
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.author-date {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.search {
+  border-bottom: 1px solid lightgray;
+  font-size: 1.5rem;
+}
+.search h4:first-child {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.news {
+  width: 100vw;
+}
+.search-tab {
+  display: flex;
+}
+.search-tab img {
+  padding-left: 10px;
+}
+.search-tab img:hover {
+  border: 1px solid lightgrey;
+}
+
+@media screen and (min-width: 420px) {
+  .body {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+  .search {
+    width: 22%;
+    border-left: 1px solid lightgray;
+    font-size: 2rem;
+    border-bottom: 0;
+    padding-left: 8px;
+    height: 100vh;
+  }
+}
