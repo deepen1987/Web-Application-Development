@@ -1,0 +1,9 @@
+ul {
+  background-color: #eee;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.26s ease;
+}
+p:hover ~ ul {
+  transform: scaleY(1);
+}
