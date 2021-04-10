@@ -1,7 +1,3 @@
-body {
-  /* font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif; */
-}
-
 iframe {
   width: 100%;
   height: 100%;
@@ -98,7 +94,6 @@ iframe {
 .collapsible-content {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle:checked + .lbl-toggle + .collapsible-content {
   max-height: max-content;
@@ -154,7 +149,6 @@ iframe {
 .collapsible-content2 {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle2:checked + .lbl-toggle2 + .collapsible-content2 {
   max-height: max-content;
@@ -210,7 +204,6 @@ iframe {
 .collapsible-content3 {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle3:checked + .lbl-toggle3 + .collapsible-content3 {
   max-height: max-content;
@@ -266,7 +259,6 @@ iframe {
 .collapsible-content4 {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle4:checked + .lbl-toggle4 + .collapsible-content4 {
   max-height: max-content;
@@ -322,7 +314,6 @@ iframe {
 .collapsible-content5 {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle5:checked + .lbl-toggle5 + .collapsible-content5 {
   max-height: max-content;
@@ -378,7 +369,6 @@ iframe {
 .collapsible-content6 {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.25s ease-in-out;
 }
 .toggle6:checked + .lbl-toggle6 + .collapsible-content6 {
   max-height: max-content;
