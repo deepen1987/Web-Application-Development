@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   let button = $("#btn");
 
-  let triangle = document.getElementById("triangle");
-
   $(button).click(() => {
     let url = `http://zumatra.com/teach/colors.php`;
 
