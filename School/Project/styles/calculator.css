@@ -30,7 +30,6 @@ h2 {
 .main {
   display: flex;
   flex-direction: column;
-  /* height: 1100px; */
 }
 .container {
   background-color: #ffffff;
@@ -239,18 +238,17 @@ td {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    /* height: 700px; */
   }
   .bmi-container {
     margin-left: 20px;
-    /* margin-right: auto; */
+
     width: 300px;
     height: 500px;
   }
 
   .body-fat-container {
     margin-left: 20px;
-    /* margin-right: auto; */
+
     width: 300px;
     height: 500px;
   }
@@ -269,8 +267,6 @@ td {
   .main {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-evenly;
-    height: 700px; */
   }
   .bmi-container {
     margin: 0;

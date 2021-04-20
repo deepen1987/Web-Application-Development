@@ -78,3 +78,14 @@ function userIpGeo(ipp) {
       weather(latIP, longIP);
     });
 }
+
+const _id = new WeakMap();
+const _password = new WeakMap();
+class Users {
+  constructor(id, password, ...param) {
+    _id.set(this, id);
+    _password.set(this, password)[
+      (this.firstName, this.lastName, this.email)
+    ] = [...param];
+  }
+}

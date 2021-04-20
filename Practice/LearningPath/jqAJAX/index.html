@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>flickr.com example</title>
+    <!-- citation: http://www.w3resource.com/JSON/JSONP.php -->
+    <style>
+      img {
+        float: left;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(function () {
+        $.getJSON(
+          "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
+          { tags: "dogs", tagmode: "any", format: "json" },
+          function (data) {
+            console.log(data);
+            $.each(data.items, function (i, item) {
+              $("<img>").attr("src", item.media.m).appendTo("#images");
+            });
+          }
+        );
+      });
+    </script>
+  </head>
+  <body>
+    <div id="images"></div>
+  </body>
+</html>
