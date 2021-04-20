@@ -12,18 +12,11 @@
       name="keywords"
       content="measuring body fat, bmi, body, workout, hiit, fat, calculator, navy calculator, navy body fat, navy fitness, navy body fat chart, navy body fat test, fitness, workout videos, workout routines"
     />
-    <!-- <meta name="application-name" content="Fitness Blender"> -->
-    <title>Calculators</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/styles.css?version=1" />
-    <link rel="stylesheet" href="styles/calculator.css?version=1" />
-
-    <script type="module" src="scripts/calculators.js"></script>
-    <script
-      data-ad-client="ca-pub-4406827176034050"
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    ></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
   </head>
   <body>
     <div class="side-container"></div>
@@ -33,258 +26,22 @@
           <img width="30" height="30" src="images/menu.svg" alt="menu" />
         </div>
         <div class="menu-content">
-          <div id="about" class="nav-bar"><a href="home.html">Home</a></div>
-          <!--Add change color on hover through JS-->
+          <div id="about" class="nav-bar"><a href="index.html">Home</a></div>
+
           <div id="work" class="nav-bar">
             <a href="workout.html">Workouts</a>
           </div>
           <div id="calc" class="nav-bar">
-            <a href="index.html">Calculators</a>
+            <a href="calculators.html">Calculators</a>
           </div>
-        </div>
-      </div>
-      <div>
-        <div class="city-temp"></div>
-        <div class="text-content">
-          <h1>BMI & US Navy - Body Fat Calculator</h1>
-          <h3>
-            What is my navy fitness level when measuring body fat using the Navy
-            Body Fat Test and Navy Body Fat Chart?
-          </h3>
-          This Body Fat Navy Calculator uses the U.S. Navy fitness formula to
-          get an estimated measuring of body fat percent. Use a tape measure
-          then enter your waist, hip, and neck measurements. Combine these
-          measurements with your gender and height and this navy calculator will
-          estimate body fat percent, lean mass, fat mass, and your general navy
-          fitness category. (You can see the Navy Body Fat Chart by clicking the
-          down arrow icon right under the results.) The water displacement test
-          is the most accurate way to determine body fat percent, but the Navy
-          Body Fat test or YMCA formula is accurate within 1-3% for most people.
         </div>
       </div>
       <div class="main">
-        <div class="bmi-container">
-          <div class="bmi-header"><h2>Body Mass Index BMI Calculator</h2></div>
-          <div class="bmi-body-us">
-            <form class="bmi" id="form-bmi" action="#">
-              <div>
-                <input type="radio" name="unit" id="us" checked />
-                <label class="radio" for="us">US</label>
-                <input type="radio" name="unit" id="metric" />
-                <label class="radio" for="metric">Metric</label>
-              </div>
-
-              <div>
-                <div>Height</div>
-                <div class="one">
-                  <input type="text" id="height-1" value="5" />
-                  <label for="height-1">feet</label>
-                  <input type="text" id="height-2" value="9" />
-                  <label for="height-2">inch</label>
-                </div>
-              </div>
-
-              <div>
-                <div>Weight</div>
-                <div class="one">
-                  <input type="text" id="weight" value="172" />
-                  <label for="weight">lbs</label>
-                </div>
-              </div>
-            </form>
-            <p class="bmi-cat">BMI Categories:</p>
-            <table class="bmi-table">
-              <thead>
-                <tr>
-                  <th>BMI</th>
-                  <th>Weight Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr id="underweight">
-                  <td>Below 18.5</td>
-                  <td>Underweight</td>
-                </tr>
-                <tr id="normal">
-                  <td>18.5—24.9</td>
-                  <td>Normal</td>
-                </tr>
-                <tr id="overweight">
-                  <td>25.0—29.9</td>
-                  <td>Overweight</td>
-                </tr>
-                <tr id="obese">
-                  <td>30.0 and Above</td>
-                  <td>Obese</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-
-          <div class="result-bmi"></div>
+        <div class="message">
+          WHEN YOU FEEL LIKE QUITING, THINK ABOUT WHY YOU STARTED -<br />
+          EVERY STEP IS A PROGRESS.<br /><br />
+          NOW START YOURS...
         </div>
-        <div class="body-fat-container">
-          <div class="bf-header"><h2>US Navy Body Fat Calculator</h2></div>
-          <div class="bf-body-us">
-            <form class="bf" id="form-bf" action="#">
-              <div>
-                <div>Gender</div>
-                <div>
-                  <input type="radio" name="gender" id="female" checked />
-                  <label class="radio" for="female">Female</label>
-                  <input type="radio" name="gender" id="male" />
-                  <label class="radio" for="male">Male</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Height</div>
-                <div>
-                  <input type="text" id="feet" value="5" />
-                  <label for="feet">feet</label>
-                  <input type="text" id="inch" value="9" />
-                  <label for="inch">inch</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Weight</div>
-                <div>
-                  <input type="text" id="bf-weight" value="121" />
-                  <label for="bf-weight">lbs</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Waist</div>
-                <div>
-                  <input type="text" id="waist" value="27" />
-                  <label for="waist">inch</label>
-                </div>
-              </div>
-              <div class="bf-details hide">
-                <table class="bf-table">
-                  <thead>
-                    <tr>
-                      <th>Category</th>
-                      <th>Women</th>
-                      <th>Men</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Essential Fat</td>
-                      <td>10% - 13%</td>
-                      <td>2% - 5%</td>
-                    </tr>
-                    <tr>
-                      <td>Athletic</td>
-                      <td>14% - 20%</td>
-                      <td>6% - 13%</td>
-                    </tr>
-                    <tr>
-                      <td>Fit</td>
-                      <td>21% - 24%</td>
-                      <td>14% - 17%</td>
-                    </tr>
-                    <tr>
-                      <td>Acceptable</td>
-                      <td>25% - 31%</td>
-                      <td>18% - 25%</td>
-                    </tr>
-                    <tr>
-                      <td>Obese</td>
-                      <td>32% +</td>
-                      <td>26% +</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="bf-inputs" id="hip-sec">
-                <div class="two">Hip</div>
-                <div>
-                  <input type="text" id="hip" value="36" />
-                  <label for="hip">inch</label>
-                </div>
-              </div>
-
-              <div class="bf-inputs">
-                <div class="two">Neck</div>
-                <div>
-                  <input type="text" id="neck" value="12" />
-                  <label for="neck">inch</label>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="result-bf"></div>
-        </div>
-      </div>
-      <div class="text-content">
-        <h3>Body Fat, Overweight, and Obesity</h3>
-        <p>
-          The scientific term for body fat is "adipose tissue." Adipose tissue
-          serves a number of important functions. Its primary purpose is to
-          store lipids from which the body creates energy. In addition, it
-          secretes a number of important hormones, and provides the body with
-          some cushioning as well as insulation.1
-        </p>
-        <p>
-          Body fat includes essential body fat and storage body fat. Essential
-          body fat is a base level of fat that is found in most parts of the
-          body. It is necessary fat that maintains life and reproductive
-          functions. The amount of essential fat differs between men and women,
-          and is typically around 2-5% in men, and 10-13% in women. The healthy
-          range of body fat for men is typically defined as 8-19%, while the
-          healthy range for women is 21-33%. While having excess body fat can
-          have many detrimental effects on a person's health, insufficient body
-          fat can have negative health effects of its own, and maintaining a
-          body fat percentage below, or even at the essential body fat
-          percentage range is a topic that should be discussed with a medical
-          professional.
-        </p>
-        <p>
-          Storage fat is fat that accumulates in adipose tissue, be it
-          subcutaneous fat (deep under the dermis and wrapped around vital
-          organs) or visceral fat (fat located inside the abdominal cavity,
-          between organs), and references to body fat typically refer to this
-          type of fat. While some storage fat is ideal, excess amounts of
-          storage fat can have serious negative health implications.
-        </p>
-        <p>
-          Excess body fat leads to the condition of being overweight and
-          eventually to obesity given that insufficient measures are taken to
-          curb increasing body fat. Note that being overweight does not
-          necessarily indicate an excess of body fat. A person's body weight is
-          comprised of multiple factors including (but not limited to) body fat,
-          muscle, bone density, and water content. Thus, highly muscular people
-          are often classified as overweight.
-        </p>
-        <p>
-          The rate at which body fat accumulates is different from person to
-          person and is dependent on many factors including genetic factors as
-          well as behavioral factors such as lack of exercise and excessive food
-          intake. Due to varying factors, it can be more difficult for certain
-          people to reduce body fat stored in the abdominal region. However,
-          managing diet and exercise has been shown to reduce stored fat. Note
-          that both women and men store body fat differently and that this can
-          change over time. After the age of 40 (or after menopause in some
-          cases for women), reduced sexual hormones can lead to excess body fat
-          around the stomach in men, or around the buttocks and thighs of women.
-        </p>
-      </div>
-      <div class="text-content">
-        <h6>
-          All calculators are made available as self-help tools for your
-          independent use with results based on information provided by the
-          user. All examples are hypothetical and are for illustrative purposes
-          only. Calculated results are believed to be accurate but results are
-          not guaranteed. Exercise, Fitness, Health, and Weight Loss calculators
-          are not for providing medical advice and should not be used as a
-          substitute for advice from a medical professional. Users are advised
-          to check with a physician before undertaking any strenuous exercise or
-          diet plan.
-        </h6>
       </div>
       <div class="footer">
         <div class="social">
