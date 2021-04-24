@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .timers {
+        display: flex;
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="clock.js"></script>
+  </head>
+  <body>
+    <h2>StopWatch</h2>
+    <div>
+      <div class="timers">
+        <label for="hrs">Hours:</label>
+        <div id="hrs"></div>
+      </div>
+      <div class="timers">
+        <label for="min">Min:</label>
+        <div id="min"></div>
+      </div>
+      <div class="timers">
+        <label for="sec">Seconds:</label>
+        <div id="sec"></div>
+      </div>
+    </div>
+    <div>
+      <button id="start" type="button" class="pure-button">Start</button>
+      <button id="stop" type="button" class="pure-button">Stop</button>
+    </div>
+  </body>
+</html>
