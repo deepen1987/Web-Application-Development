@@ -1,4 +1,5 @@
 # Workout Website 
+Description - This website is designed considering body weigth workouts and Body measurements. There are 2 main section for the webiste Workout and Body Calculators. The intention of the site if to give user the idea what their fitness level is using calculator page and they can then use the workouts page to improve their overall fitness.
 
 *The Project has 3 pages Home, Workout Videos and Body calculators.*
 
