@@ -21,3 +21,8 @@ Description - This website is designed considering body weight workouts and Body
 * HTML
 * CSS
 * JavaScript
+
+
+### Instructions to run the program:  
+  1. Download the project folder.  
+  2. Run the program using a local server.
