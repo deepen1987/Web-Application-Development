@@ -52,23 +52,27 @@ export function bfFemale() {
   calculateBFat();
 }
 
+function verify(inputField) {
+  return isNaN(inputField) || inputField.trim() === "" || inputField < 0;
+}
+
 function resetInput() {
-  if (isNaN(feet.value)) {
+  if (verify(feet.value)) {
     feet.value = 5;
   }
-  if (isNaN(inch.value)) {
+  if (verify(inch.value)) {
     inch.value = 9;
   }
-  if (isNaN(waist.value)) {
+  if (verify(waist.value)) {
     waist.value = 27;
   }
-  if (isNaN(hip.value)) {
+  if (verify(hip.valu)) {
     hip.value = 36;
   }
-  if (isNaN(bfWeight.value)) {
+  if (verify(bfWeight.value)) {
     bfWeight.value = 121;
   }
-  if (isNaN(neck.value)) {
+  if (verify(neck.value)) {
     neck.value = 12;
   }
 }

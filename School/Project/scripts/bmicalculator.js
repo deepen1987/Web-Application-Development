@@ -17,7 +17,6 @@ export function calculateBmi() {
     }
     bmiRes.insertAdjacentHTML("beforeend", bmiOut);
     bmiResult(bmi);
-    // console.log(bmi);
   }
   if (bmiUs.checked === true) {
     let heightInMeter =
@@ -37,8 +36,6 @@ export function calculateBmi() {
     document.querySelector(".result-bmi").addEventListener("mouseout", () => {
       bmiResult();
     });
-
-    // console.log(bmi);
   }
 }
 
@@ -61,14 +58,18 @@ export function bmiU() {
   calculateBmi();
 }
 
+function verify(inputField) {
+  return isNaN(inputField) || inputField.trim() === "" || inputField < 0;
+}
+
 function resetInput() {
-  if (isNaN(bmiHeight1.value)) {
+  if (verify(bmiHeight1.value)) {
     bmiHeight1.value = 5;
   }
-  if (isNaN(bmiHeight2.value)) {
+  if (verify(bmiHeight2.value)) {
     bmiHeight2.value = 9;
   }
-  if (isNaN(bmiWeight.value)) {
+  if (verify(bmiWeight.value)) {
     bmiWeight.value = 100;
   }
 }
