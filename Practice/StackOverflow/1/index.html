@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <button id="show_all"><p>Show all</p></button>
+    <button id="hide_all"><p>Hide all</p></button>
+    <table
+      class="table table-bordered"
+      id="mytable"
+      style="border-collapse: collapse"
+    >
+      <thead>
+        <tr>
+          <th colspan="5">Name</th>
+          <th>DR</th>
+          <th>CR</th>
+        </tr>
+        <tr data-depth="0" class="collapse level0">
+          <td colspan="5">CAPITAL SHARE</td>
+          <td>10,000</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="0" class="collapse level0">
+          <td colspan="5">CAPITAL CONTRIBUTION</td>
+          <td>200,000</td>
+          <td>12,000</td>
+        </tr>
+        <tr data-depth="0" class="collapse level0">
+          <td colspan="5">FIXED ASSETS</td>
+          <td>200,320</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="1" class="collapse level1">
+          <td colspan="5">BUILDING</td>
+          <td>3,222,000</td>
+          <td>0.00</td>
+        </tr>
+
+        <tr data-depth="2" class="collapse level2">
+          <td colspan="5">ACCUM. DPN-BUILDING</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="1" class="collapse level1">
+          <td colspan="5">COMPUTER</td>
+          <td>320,000</td>
+          <td>0.00</td>
+        </tr>
+
+        <tr data-depth="2" class="collapse level2">
+          <td colspan="5">ACCUM. DPN-COMPUTER</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="3" class="collapse level3">
+          <td colspan="5">ACCUM. DPN-COMPUTER</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="3" class="collapse level3">
+          <td colspan="5">ACCUM. DPN-COMPUTER</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+        <tr data-depth="0" class="collapse level0">
+          <td colspan="5">INVESTMENT</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+
+        <tr data-depth="1" class="collapse level1">
+          <td colspan="5">INVESTMENT IN ABC COMPANY</td>
+          <td>0.00</td>
+          <td>0.00</td>
+        </tr>
+      </thead>
+    </table>
+  </body>
+</html>
