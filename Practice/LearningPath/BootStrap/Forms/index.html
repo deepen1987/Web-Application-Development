@@ -17,10 +17,52 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <style>
+      #loader {
+        position: fixed;
+        left: 50%;
+        top: 20%;
+        z-index: 1;
+      }
+      .loader {
+        border: 4px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 4px solid #3498db;
+        width: 30px;
+        height: 30px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      .box {
+        border: 3px solid lightblue;
+        width: 40px;
+        height: 40px;
+        float: left;
+      }
+
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% {
+          -webkit-transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
     <script src="index.js"></script>
   </head>
   <body>
-    <form class="container" id="form">
+    <form class="container" id="form" method="POST">
       <div class="row g-3 mb-3">
         <div class="col-md-3">
           <label for="fname" class="form-label">First Name: </label>
@@ -45,7 +87,16 @@
             Accept
           </button>
         </div>
+        <div id="loader"></div>
       </div>
     </form>
+    <div id="data"></div>
+    <div class="box"></div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+      veritatis. Deserunt quo perferendis veniam a alias, harum voluptatem non
+      iste. Excepturi laudantium numquam voluptate illum omnis odio deserunt
+      iste fuga?
+    </p>
   </body>
 </html>
