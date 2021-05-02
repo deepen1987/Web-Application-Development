@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .frame {
+        border: 3px solid brown;
+        width: 150px;
+        height: 300px;
+      }
+      .door {
+        display: flex;
+        background-color: maroon;
+        width: inherit;
+        height: inherit;
+        transition: transform 2.5s;
+      }
+      .frame {
+        perspective: 200px;
+      }
+      .frame:hover .door {
+        transform: rotateY(50deg);
+        transform-origin: 0 50%;
+      }
+      .box1 {
+        border: 2px solid black;
+        width: 45px;
+        height: 70px;
+        box-shadow: inset -5px 5px 0px 0px black, inset 5px -5px 0px 0px black;
+        position: relative;
+        left: 20px;
+        top: 50px;
+      }
+      .box2 {
+        border: 2px solid black;
+        width: 45px;
+        height: 70px;
+        box-shadow: inset -5px 5px 0px 0px black, inset 5px -5px 0px 0px black;
+        position: relative;
+        left: 45px;
+        top: 50px;
+      }
+      .box3 {
+        border: 2px solid black;
+        width: 45px;
+        height: 70px;
+        box-shadow: inset -5px 5px 0px 0px black, inset 5px -5px 0px 0px black;
+        position: relative;
+        right: 55px;
+        bottom: -170px;
+      }
+      .box4 {
+        border: 2px solid black;
+        width: 45px;
+        height: 70px;
+        box-shadow: inset -5px 5px 0px 0px black, inset 5px -5px 0px 0px black;
+        position: relative;
+        right: 28px;
+        bottom: -170px;
+      }
+      .knob {
+        border: 2px solid black;
+        width: 7px;
+        height: 7px;
+        border-radius: 100%;
+        background-color: #fff;
+        position: relative;
+        right: 10px;
+        top: 140px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="door">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="knob"></div>
+      </div>
+    </div>
+  </body>
+</html>
