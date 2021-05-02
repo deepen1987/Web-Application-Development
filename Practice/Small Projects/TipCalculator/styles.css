@@ -1,0 +1,32 @@
+#calculator {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#amt-grp {
+  display: flex;
+}
+
+#amt-lbl {
+  padding: 6px 1px;
+}
+.header {
+  padding: 0;
+  text-align: center;
+}
+
+.card-header {
+  background: #1f030c;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.body {
+  padding: 10px;
+}
+
+.btn {
+  background-color: #ad133a;
+}
