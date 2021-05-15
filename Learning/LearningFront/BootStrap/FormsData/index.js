@@ -25,3 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("form");
   form.addEventListener("submit", formSubmit);
 });
+
+// for FormData to work you have to have name property inside each element.
