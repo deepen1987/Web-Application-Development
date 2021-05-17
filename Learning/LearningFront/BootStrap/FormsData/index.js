@@ -13,13 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
     $("#loader").removeClass("loader");
     const data = new FormData(event.target);
 
-    const values1 = Object.fromEntries(data.entries());
-    const data1 = Object.values(values1);
-    console.log(data1);
+    let obj = {};
+    for (const key of data.keys()) {
+      obj[key] = data.get(key);
+    }
+    console.log(obj);
 
-    document.getElementById(
-      "data"
-    ).innerHTML = `${data1[0]}\n${data1[1]}\n${data1[2]}\n${data1[3]}\n`;
+    document.getElementById("data").innerHTML = `${JSON.stringify(obj)}`;
+
+    // const values1 = Object.fromEntries(data.entries());
+    // const data1 = Object.values(values1);
+    // console.log(data1);
+
+    // document.getElementById(
+    //   "data"
+    // ).innerHTML = `${data1[0]}\n${data1[1]}\n${data1[2]}\n${data1[3]}\n`;
   }
 
   let form = document.querySelector("form");
